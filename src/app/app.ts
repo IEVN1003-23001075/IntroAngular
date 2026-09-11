@@ -7,5 +7,16 @@ import { Component, signal } from '@angular/core';
   templateUrl: './app.html',
 })
 export class App {
-  protected readonly title = signal('IntroAngular');
+  // interpolacion de valores
+  tittle: string = 'Zaid Isaac Sereno Hernandez'
+
+  duplicarnumero(a:number):number{
+    return a*2
+  }
+
+  pelicula={
+    titulo: 'spiderman',
+    fechalanzamiento: new Date(),
+    precio: 250
+  }
 }
