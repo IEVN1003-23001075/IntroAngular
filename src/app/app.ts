@@ -1,23 +1,24 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.html',
-  standalone: false,
   styleUrl: './app.css',
-
+  standalone: false
 })
 export class App {
-  // interpolacion de valores
-  tittle: string = 'Zaid Isaac Sereno Hernandez'
 
-  duplicarnumero(a:number):number{
-    return a*2
+  // Interpolación de valores
+  tittle: string = 'Zaid Isaac Sereno Hernandez';
+
+  duplicarnumero(a: number): number {
+    return a * 2;
   }
 
-  pelicula={
+  pelicula = {
     titulo: 'spiderman',
     fechalanzamiento: new Date(),
     precio: 250
-  }
+  };
+
 }
