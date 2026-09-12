@@ -1,9 +1,55 @@
 import { Component } from '@angular/core';
-
+ 
 @Component({
-  selector: 'app-heroes-list',
+  selector: 'app-heores-list',
   standalone: false,
-  styleUrl: './heroes-list.css',
-  templateUrl: './heroes-list.html',
+  templateUrl: './heores-list.html',
+  styleUrl: './heores-list.css',
 })
-export class HeroesList {}
+export class HeoresList {
+ 
+  imageWidth:number=40;
+  imageMargin:number=2;
+  muestraImagen:boolean=true;
+  listFilter:string='';
+  showImage():void{
+    this.muestraImagen=!this.muestraImagen;
+  };
+ 
+  heroes:any[]=[
+
+        {
+            imagen: 'https://dragonball-api.com/characters/goku_normal.webp',
+            nombre: 'Goku',
+            descripcion: 'Kame hame ha',
+            race: 'Saiyan',
+            ki: 9000
+        },
+
+        {
+            imagen: 'https://dragonball-api.com/characters/vegeta_normal.webp',
+            nombre: 'Vegeta',
+            descripcion: 'Resplandor Final',
+            race: 'Saiyan',
+            ki: 15000
+        },
+
+        {
+            imagen: 'https://dragonball-api.com/transformaciones/gogeta.webp',
+            nombre: 'Gogeta',
+            descripcion: 'Polvo Estelar',
+            race: 'Saiyan-male',
+            ki: 250000
+        },
+
+        {
+            imagen: 'https://dragonball-api.com/characters/gohan.webp',
+            nombre: 'Gohan',
+            descripcion: 'Masenko',
+            race: 'Saiyan',
+            ki: 8000
+        }
+
+    ];
+
+} 
